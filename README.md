@@ -8,28 +8,22 @@ Experience the thrill of street racing with No Hesi - where the adrenaline of Ne
 1. clone the repo
 
     ```bash
-    git clone https://github.com/DevlineSolutions/no-hesi.git
+    git clone https://git@github.com:aqeelchishti/nohesi.git
     ```
 
-2. change directory to no-hesi
+2. change directory to nohesi
 
     ```bash
-    cd no-hesi
+    cd nohesi
     ```
 
-3. checkout to custom-auth branch
-
-    ```bash
-    git checkout custom-auth
-    ```
-
-4. install dependencies
+3. install dependencies
 
     ```bash
     npm install
     ```
 
-5. prisma dependencies
+4. prisma dependencies
 
     ```bash
     npx prisma db pull
