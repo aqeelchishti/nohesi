@@ -143,26 +143,39 @@ model trials {
 }
 
 model user {
-  id                       String                    @id(map: "User_pkey") @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  email                    String                    @unique(map: "User_email_key")
-  name                     String?                   @unique
-  password                 String?
-  avatar                   String?
-  email_verified           Boolean?                  @default(true)
-  stripe_customer_id       String?                   @unique
-  tries_left               Int                       @default(3) @db.SmallInt
-  fingerprints             String[]                  @default([])
-  trial_availed            Boolean                   @default(false)
-  change_email_token       change_email_token?
-  email_verification_token email_verification_token?
-  favourite_servers        favourite_servers[]
-  friends                  friends[]
-  launcher_auth_token      launcher_auth_token[]
-  magic_link               magic_link?
-  oauth_account            oauth_account[]
-  password_reset_token     password_reset_token?
-  session                  session[]
-  usernames                usernames?
+  id                              String                    @id(map: "User_pkey") @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  email                           String                    @unique(map: "User_email_key")
+  name                            String?                   @unique
+  password                        String?
+  avatar                          String?
+  email_verified                  Boolean?                  @default(true)
+  stripe_customer_id              String?                   @unique
+  tries_left                      Int                       @default(3) @db.SmallInt
+  fingerprints                    String[]                  @default([])
+  trial_availed                   Boolean                   @default(false)
+  created_at                      DateTime                  @default(now()) @db.Timestamptz(6)
+  username_created_at             DateTime?                 @db.Timestamptz(6)
+  fullname                        String?
+  banner                          String?
+  show_discord_username           Boolean?                  @default(true)
+  show_steam_username             Boolean?                  @default(true)
+  firstname                       String?
+  lastname                        String?
+  age                             String?
+  receive_marketing_emails        Boolean?                  @default(true)
+  view_stats                      Boolean?                  @default(true)
+  country                         String?
+  country_code                    String?
+  change_email_token              change_email_token?
+  email_verification_token        email_verification_token?
+  favourite_servers               favourite_servers[]
+  friends_friends_user_toTouser   friends[]                 @relation("friends_user_toTouser")
+  friends_friends_user_fromTouser friends[]                 @relation("friends_user_fromTouser")
+  launcher_auth_token             launcher_auth_token[]
+  magic_link                      magic_link?
+  oauth_account                   oauth_account[]
+  password_reset_token            password_reset_token?
+  session                         session[]
 }
 
 model chat {
@@ -246,39 +259,49 @@ model steam_requests {
 }
 
 model usernames {
-  name String @id
-  user user   @relation(fields: [name], references: [name], onDelete: Cascade, onUpdate: NoAction)
+  name       String    @id
+  removed_at DateTime? @db.Timestamptz(6)
 }
 
 model role_correction_stats {
-  id                 BigInt               @id @default(autoincrement())
-  created_at         DateTime             @default(now()) @db.Timestamptz(6)
-  reason             role_correction_type
-  user_id            String?              @db.Uuid
-  discord_id         String?
-  stripe_customer_id String?
-}
-
-model friend_requests {
-  id            String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  friend_id     String    @db.Uuid
-  status        String
-  request_date  DateTime? @db.Timestamptz(6)
-  accepted_date DateTime? @db.Timestamptz(6)
-  friends       friends   @relation(fields: [friend_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "friend_id_fkey")
+  id                  BigInt               @id @default(autoincrement())
+  created_at          DateTime             @default(now()) @db.Timestamptz(6)
+  reason              role_correction_type
+  user_id             String?              @db.Uuid
+  discord_id          String?
+  stripe_customer_id  String?
+  discord_username    String?
+  subscription_status String?
 }
 
 model friends {
-  id              String            @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  user_id         String            @db.Uuid
-  date_added      DateTime?         @db.Timestamptz(6)
-  mutual_friends  Int?              @map("mutual-friends")
-  friend_requests friend_requests[]
-  user            user              @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "user_id_fkey")
+  id                           String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  user_to                      String    @db.Uuid
+  accepted_at                  DateTime? @db.Timestamptz(6)
+  request_accepted             Boolean?  @default(false)
+  created_at                   DateTime? @default(now()) @db.Timestamptz(6)
+  user_from                    String    @db.Uuid
+  user_friends_user_toTouser   user      @relation("friends_user_toTouser", fields: [user_to], references: [id], onDelete: Cascade, map: "friends_user1_fkey")
+  user_friends_user_fromTouser user      @relation("friends_user_fromTouser", fields: [user_from], references: [id], onDelete: Cascade, map: "friends_user2_fkey")
+
+  @@unique([user_to, user_from], map: "friends_user1_user2_key")
+}
+
+model recovery_stats {
+  id                  BigInt               @id @default(autoincrement())
+  created_at          DateTime             @default(now()) @db.Timestamptz(6)
+  reason              role_correction_type
+  user_id             String?              @db.Uuid
+  discord_id          String?
+  stripe_customer_id  String?
+  discord_username    String?
+  subscription_status String?
 }
 
 enum role_correction_type {
   removed_roles @map("removed-roles")
   added_roles   @map("added-roles")
   updated_roles @map("updated-roles")
+  stripe_error  @map("stripe-error")
+  discord_error @map("discord-error")
 }
