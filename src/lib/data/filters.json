@@ -1,0 +1,78 @@
+{
+	"region": {
+		"title": "Region",
+		"values": [
+			{
+				"region": "Europe",
+				"code": "EU",
+				"flag": "eu"
+			},
+			{
+				"region": "North America",
+				"code": "US",
+				"flag": "us"
+			},
+			{
+				"region": "Australia",
+				"code": "OCE",
+				"flag": "au"
+			},
+			{
+				"region": "Asia",
+				"code": "ASIA",
+				"flag": "sg"
+			}
+		],
+		"isOpen": false,
+		"active": "All"
+	},
+	"traffic": {
+		"title": "Traffic Density",
+		"values": ["Heavy Traffic", "Light Traffic", "Realistic Traffic", "No Traffic"],
+		"isOpen": false,
+		"active": "All"
+	},
+	"map": {
+		"title": "Map",
+		"values": [
+			"Barcelona",
+			"SRP",
+			"415",
+			"Kutchkickers",
+			"Nordschleife",
+			"HighForce",
+			"Brooklyn",
+			"Mussleman",
+			"Fruitlines",
+			"Akina",
+			"Shinjuku",
+			"Limerock",
+			"E-Town",
+			"Tsukuba",
+			"Monaco",
+			"California",
+			"Namamagari",
+			"Daikoku",
+			"RoadAmerica",
+			"FDR",
+			"Arrabassada",
+			"Horizon",
+			"LagunaSeca",
+			"LACanyons",
+			"UnionIsland"
+		],
+		"isOpen": false,
+		"active": "All"
+	},
+	"tier": {
+		"title": "Tier",
+		"values": ["Public", "Certified", "Tier 1", "Tier 2", "Tier 3"],
+		"isOpen": false,
+		"active": "All"
+	},
+	"favouriteServers": {
+		"title": "Servers",
+		"values": ["All", "Favourite"]
+	},
+	"sortOptions": ["Most players", "Least players"]
+}

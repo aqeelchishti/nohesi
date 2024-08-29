@@ -1,0 +1,108 @@
+[
+	{
+		"title": "Region",
+		"slug": "region",
+		"values": [
+			{
+				"value": "Europe",
+				"code": "EU",
+				"flag": "eu",
+				"active": false,
+				"show": true
+			},
+			{
+				"value": "North America",
+				"code": "US",
+				"flag": "us",
+				"active": false,
+				"show": true
+			},
+			{
+				"value": "Australia",
+				"code": "OCE",
+				"flag": "au",
+				"active": false,
+				"show": true
+			},
+			{
+				"value": "Asia",
+				"code": "ASIA",
+				"flag": "sg",
+				"active": false,
+				"show": true
+			}
+		],
+		"active": true
+	},
+	{
+		"title": "Traffic Density",
+		"slug": "traffic",
+		"values": [
+			{
+				"value": "Heavy Traffic",
+				"active": false,
+				"show": true
+			},
+			{
+				"value": "Light Traffic",
+				"active": false,
+				"show": true
+			},
+			{
+				"value": "Realistic Traffic",
+				"active": false,
+				"show": true
+			},
+			{
+				"value": "No Traffic",
+				"active": false,
+				"show": true
+			}
+		],
+		"active": true
+	},
+	{
+		"title": "Tier",
+		"slug": "tier",
+		"values": [
+			{ "value": "Public", "active": false, "show": true },
+			{ "value": "Certified", "active": false, "show": true },
+			{ "value": "Tier 1", "active": false, "show": true },
+			{ "value": "Tier 2", "active": false, "show": true },
+			{ "value": "Tier 3", "active": false, "show": true }
+		],
+		"active": true
+	},
+	{
+		"title": "Map",
+		"slug": "map",
+		"values": [
+			{ "value": "Barcelona", "active": false, "show": true },
+			{ "value": "SRP", "active": false, "show": true },
+			{ "value": "415", "active": false, "show": true },
+			{ "value": "Kutchkickers", "active": false, "show": true },
+			{ "value": "Nordschleife", "active": false, "show": true },
+			{ "value": "HighForce", "active": false, "show": true },
+			{ "value": "Brooklyn", "active": false, "show": true },
+			{ "value": "Mussleman", "active": false, "show": true },
+			{ "value": "Fruitlines", "active": false, "show": true },
+			{ "value": "Akina", "active": false, "show": true },
+			{ "value": "Shinjuku", "active": false, "show": true },
+			{ "value": "Limerock", "active": false, "show": true },
+			{ "value": "E-Town", "active": false, "show": true },
+			{ "value": "Tsukuba", "active": false, "show": true },
+			{ "value": "Monaco", "active": false, "show": true },
+			{ "value": "California", "active": false, "show": true },
+			{ "value": "Namamagari", "active": false, "show": true },
+			{ "value": "Daikoku", "active": false, "show": true },
+			{ "value": "RoadAmerica", "active": false, "show": true },
+			{ "value": "FDR", "active": false, "show": true },
+			{ "value": "Arrabassada", "active": false, "show": true },
+			{ "value": "Horizon", "active": false, "show": true },
+			{ "value": "LagunaSeca", "active": false, "show": true },
+			{ "value": "LACanyons", "active": false, "show": true },
+			{ "value": "UnionIsland", "active": false, "show": true }
+		],
+		"active": true
+	}
+]

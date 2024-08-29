@@ -1,0 +1,446 @@
+{
+	"page": {
+		"home": {
+			"hero": {
+				"h1": "Your path to \nincredible \ngaming",
+				"h2": "Embark \non gaming \ntoday!",
+				"btn": "Explore Servers"
+			},
+			"cta1": {
+				"heading": "We are the best in world",
+				"desc": "Tortor enim lacus eget duis. Eget id habitant adipiscing cursus blandit enim ultrices et. Vel viverra sem amet sit a venenatis at. Nulla feugiat tellus facilisis ultricies commodo lectus morbi sit. Quam."
+			},
+			"cta2": {
+				"heading": "What are you waiting for???",
+				"subHeading": "Start right now!",
+				"btn": "Join Discord Community"
+			},
+			"merch": {
+				"title": "Merch out now",
+				"btn": "Explore"
+			},
+			"news": {
+				"title": "Read our news",
+				"btn": "Show all"
+			}
+		},
+		"about": {
+			"hero": {
+				"heading": "Eget mi aliquam phasellus",
+				"subheading": "Proin at porta eu condimentum"
+			},
+			"section2": {
+				"heading": "What we do",
+				"desc": "Proin massa aliquet lorem adipiscing. Nibh id ultrices bibendum volutpat at eget. Rhoncus odio est adipiscing viverra. Eu quisque diam mollis neque viverra vel eget tellus a. Condimentum fusce sem in fermentum pellentesque nunc massa. Velit scelerisque nec enim dolor vel. Sagittis lectus est ultricies ac eu euismod morbi lectus nunc. Consectetur commodo enim dictumst integer sit in ipsum condimentum. Dolor vulputate quis amet cursus tincidunt nec.\n Arcu auctor viverra elit et senectus. Elit hendrerit proin purus a. Fermentum et duis risus est. A augue eros enim dis neque id non a. Odio lacus aliquet pretium volutpat tortor nisl ornare non malesuada. Purus euismod senectus duis tincidunt dolor est eget."
+			},
+			"testimonials": {
+				"title": "What people say about us"
+			},
+			"social": {
+				"title": "Check our youtube channel",
+				"btn": "Go to Youtube"
+			}
+		},
+		"contact": {
+			"heading": "Contacts",
+			"sections": {
+				"1": "Youtube Channel",
+				"2": "Discord",
+				"3": "Instagram",
+				"4": "Tiktok"
+			}
+		},
+		"faq": {
+			"faqData": [
+				{
+					"question": "Facilisis sit erat sagittis non?",
+					"answer": "Tellus pellentesque felis sodales pretium. Ultrices diam viverra quam euismod. Nec est etiam ac ullamcorper vitae. Ut enim ullamcorper eros pulvinar. Tincidunt sed duis hendrerit vel nisl nec leo. Eu consectetur tortor nec viverra at. Diam pellentesque dignissim in mauris. Porttitor ut magna nibh nulla et vulputate elit. Curabitur vitae dignissim vitae nulla elementum elit nisl. Pellentesque tincidunt neque ipsum mi. Consequat eget pharetra proin turpis nisl viverra curabitur urna id. Velit nibh venenatis nulla magna ut odio phasellus. Amet fames gravida scelerisque ultrices elit placerat.",
+					"isOpen": false
+				},
+				{
+					"question": "Dictum cursus ultrices odio auctor enim mi viverra sed?",
+					"answer": "Tellus pellentesque felis sodales pretium. Ultrices diam viverra quam euismod. Nec est etiam ac ullamcorper vitae. Ut enim ullamcorper eros pulvinar. Tincidunt sed duis hendrerit vel nisl nec leo. Eu consectetur tortor nec viverra at. Diam pellentesque dignissim in mauris. Porttitor ut magna nibh nulla et vulputate elit. Curabitur vitae dignissim vitae nulla elementum elit nisl. Pellentesque tincidunt neque ipsum mi. Consequat eget pharetra proin turpis nisl viverra curabitur urna id. Velit nibh venenatis nulla magna ut odio phasellus. Amet fames gravida scelerisque ultrices elit placerat.",
+					"isOpen": false
+				},
+				{
+					"question": "Purus nulla turpis in id?",
+					"answer": "Tellus pellentesque felis sodales pretium. Ultrices diam viverra quam euismod. Nec est etiam ac ullamcorper vitae. Ut enim ullamcorper eros pulvinar. Tincidunt sed duis hendrerit vel nisl nec leo. Eu consectetur tortor nec viverra at. Diam pellentesque dignissim in mauris. Porttitor ut magna nibh nulla et vulputate elit. Curabitur vitae dignissim vitae nulla elementum elit nisl. Pellentesque tincidunt neque ipsum mi. Consequat eget pharetra proin turpis nisl viverra curabitur urna id. Velit nibh venenatis nulla magna ut odio phasellus. Amet fames gravida scelerisque ultrices elit placerat.",
+					"isOpen": false
+				},
+				{
+					"question": "Dapibus vel purus ornare egestas viverra?",
+					"answer": "Tellus pellentesque felis sodales pretium. Ultrices diam viverra quam euismod. Nec est etiam ac ullamcorper vitae. Ut enim ullamcorper eros pulvinar. Tincidunt sed duis hendrerit vel nisl nec leo. Eu consectetur tortor nec viverra at. Diam pellentesque dignissim in mauris. Porttitor ut magna nibh nulla et vulputate elit. Curabitur vitae dignissim vitae nulla elementum elit nisl. Pellentesque tincidunt neque ipsum mi. Consequat eget pharetra proin turpis nisl viverra curabitur urna id. Velit nibh venenatis nulla magna ut odio phasellus. Amet fames gravida scelerisque ultrices elit placerat.",
+					"isOpen": false
+				},
+				{
+					"question": "In cursus scelerisque mattis est?",
+					"answer": "Tellus pellentesque felis sodales pretium. Ultrices diam viverra quam euismod. Nec est etiam ac ullamcorper vitae. Ut enim ullamcorper eros pulvinar. Tincidunt sed duis hendrerit vel nisl nec leo. Eu consectetur tortor nec viverra at. Diam pellentesque dignissim in mauris. Porttitor ut magna nibh nulla et vulputate elit. Curabitur vitae dignissim vitae nulla elementum elit nisl. Pellentesque tincidunt neque ipsum mi. Consequat eget pharetra proin turpis nisl viverra curabitur urna id. Velit nibh venenatis nulla magna ut odio phasellus. Amet fames gravida scelerisque ultrices elit placerat.",
+					"isOpen": false
+				},
+				{
+					"question": "Tempus vitae leo aliquet viverra faucibus?",
+					"answer": "Tellus pellentesque felis sodales pretium. Ultrices diam viverra quam euismod. Nec est etiam ac ullamcorper vitae. Ut enim ullamcorper eros pulvinar. Tincidunt sed duis hendrerit vel nisl nec leo. Eu consectetur tortor nec viverra at. Diam pellentesque dignissim in mauris. Porttitor ut magna nibh nulla et vulputate elit. Curabitur vitae dignissim vitae nulla elementum elit nisl. Pellentesque tincidunt neque ipsum mi. Consequat eget pharetra proin turpis nisl viverra curabitur urna id. Velit nibh venenatis nulla magna ut odio phasellus. Amet fames gravida scelerisque ultrices elit placerat.",
+					"isOpen": false
+				},
+				{
+					"question": "Ultricies sed nibh nisl mattis auctor in?",
+					"answer": "Tellus pellentesque felis sodales pretium. Ultrices diam viverra quam euismod. Nec est etiam ac ullamcorper vitae. Ut enim ullamcorper eros pulvinar. Tincidunt sed duis hendrerit vel nisl nec leo. Eu consectetur tortor nec viverra at. Diam pellentesque dignissim in mauris. Porttitor ut magna nibh nulla et vulputate elit. Curabitur vitae dignissim vitae nulla elementum elit nisl. Pellentesque tincidunt neque ipsum mi. Consequat eget pharetra proin turpis nisl viverra curabitur urna id. Velit nibh venenatis nulla magna ut odio phasellus. Amet fames gravida scelerisque ultrices elit placerat.",
+					"isOpen": false
+				},
+				{
+					"question": "At quam quis et pretium vivamus bibendum sed?",
+					"answer": "Tellus pellentesque felis sodales pretium. Ultrices diam viverra quam euismod. Nec est etiam ac ullamcorper vitae. Ut enim ullamcorper eros pulvinar. Tincidunt sed duis hendrerit vel nisl nec leo. Eu consectetur tortor nec viverra at. Diam pellentesque dignissim in mauris. Porttitor ut magna nibh nulla et vulputate elit. Curabitur vitae dignissim vitae nulla elementum elit nisl. Pellentesque tincidunt neque ipsum mi. Consequat eget pharetra proin turpis nisl viverra curabitur urna id. Velit nibh venenatis nulla magna ut odio phasellus. Amet fames gravida scelerisque ultrices elit placerat.",
+					"isOpen": false
+				}
+			]
+		},
+		"servers": {
+			"title": "Servers",
+			"desc": "Proin at porta eu condimentum",
+			"tableHeaders": [
+				"Name",
+				"Traffic Density",
+				"Slots",
+				"VIP Slots",
+				"Tier 3 cars",
+				"Map",
+				"Region"
+			],
+			"filters": [
+				{
+					"title": "Region",
+					"values": ["Europe", "America", "Australia"],
+					"isOpen": false,
+					"active": "Europe"
+				},
+				{
+					"title": "Traffic Density",
+					"values": ["Heavy", "Light"],
+					"isOpen": false,
+					"active": "Heavy"
+				},
+				{
+					"title": "Map",
+					"values": ["Shutoko Revival Project", "FDR"],
+					"isOpen": false,
+					"active": "Shutoko Revival Project"
+				},
+				{
+					"title": "Tier",
+					"values": ["1: Public+", "2: Midnight", "3: Underground"],
+					"isOpen": false,
+					"active": "1: Public+"
+				}
+			],
+			"sortOptions": ["Players", "Region"],
+			"filterBox": {
+				"title": "Filters"
+			}
+		},
+		"shop": {
+			"banner": {
+				"title": "No hesi x slap train",
+				"btn": "Explore Collection"
+			},
+			"categories": ["Eleifend", "Nunc", "Arcu", "Scelerisque", "Enim", "Rhoncus"],
+			"sortOptions": ["Relevance", "Price", "In Stock"]
+		},
+		"user": {
+			"subscriptions": {
+				"title": "Subscriptions",
+				"sub": "Your subscription",
+				"renewal": "Next subscription renewal:",
+				"otherMsg": "Other subscriptions"
+			},
+			"home": {
+				"btn": "Share profile",
+				"participated": "Participated from",
+				"bannerMsg": "Change banner image",
+				"title": "Statistics",
+				"car": "Favourite car",
+				"miles": "Miles driven",
+				"points": "Points record",
+				"milesLabel": "Miles",
+				"pointsLabel": "Points",
+				"statsMsg": "For you to see your statistics you must connect Steam profile.",
+				"statsBtn": "Connect Steam",
+				"statsMsg2": "User don't have any statistics",
+				"addMsg": "Add to a Friends",
+				"msg": "Message",
+				"report": "Report"
+			},
+			"leaderboard": {
+				"title": "Leaderboard",
+				"regions": ["Europe", "America", "Australia"],
+				"filters": ["Cut up Points", "Track times", "Drift"],
+				"tableHeaders": ["Position", "Player", "Points", "Car", "Label"]
+			},
+			"favServers": {
+				"title": "Favourite servers"
+			},
+			"friends": {
+				"title": "Friends",
+				"placeholder": "Find friends",
+				"buyMsg": "Buy VIP to Access this server",
+				"playing": "Now playing in"
+			},
+			"profile": {
+				"title": "Profile",
+				"basicInfo": {
+					"title": "Basic Information",
+					"label1": "Your name",
+					"label2": "Username",
+					"label": "Email",
+					"placeholder1": "John",
+					"placeholder2": "Enter username",
+					"placeholder3": "example@mail.com",
+					"btn": "Verify new email",
+					"modalText1": "We sent you a six digit confirmation code to example@mail.com. Please enter it below to confirm your email adress.",
+					"modalText2": "Didn't receive a code? ",
+					"modalText3": "Send code again.",
+					"modalBtn": "Cancel",
+					"modalPlaceholder": "Enter 6-digit code"
+				},
+				"leaderboard": {
+					"title": "Leaderboard labels",
+					"label1": "Track Time",
+					"label2": "Drift",
+					"placeholder": "Choose track"
+				},
+				"password": {
+					"title": "Change Password",
+					"label1": "Old password",
+					"label2": "New password",
+					"label3": "Repeat password",
+					"forgotLink": "Forgot password?"
+				},
+				"social": {
+					"title": "Social Links",
+					"btn": "Link"
+				},
+				"other": {
+					"title": "Other Settings",
+					"msg": "Deactivate my account",
+					"warning": "Warning! This action cannot be cancelled!",
+					"btn": "Deactivate",
+					"modalTitle": "Account deactivation",
+					"modalWarning": "Warning! This action cannot be cancelled!",
+					"modalMsg1": "We're sorry you want to deactivate your account. Please write below the reason why you want to do this.",
+					"modalMsg2": "We sent you a six digit confirmation code to example@mail.com. Please enter it below to confirm your email adress.",
+					"modalMsg3": "Didn't receive a code? ",
+					"modalMsg4": "Send code again.",
+					"modalBtn": "Cancel",
+					"modalPlaceholder1": "Type your message",
+					"modalPlaceholder2": "Enter 6-digit code"
+				},
+				"btn1": "Cancel",
+				"btn2": "Save"
+			}
+		}
+	},
+	"nav": {
+		"header": {
+			"leftPages": ["Shop", "About us", "News", "Contacts", "FAQ"],
+			"rightPages": ["Live", "Subscription", "Servers", "Download Installer"],
+			"btn": "Log In"
+		},
+		"footer": {
+			"links": [
+				"Shop",
+				"About us",
+				"News",
+				"Contacts",
+				"Live",
+				"Subscription",
+				"Servers",
+				"Download Installer",
+				"Privacy Policy",
+				"Terms Of Use"
+			],
+			"copyright": "NoHesi 2023. All rights reserved."
+		},
+		"profile": {
+			"links": [
+				"Home",
+				"Leaderboard",
+				"Friends",
+				"Favourite Servers",
+				"Edit Profile",
+				"Subscriptions"
+			],
+			"logout": "Log out"
+		},
+		"notificationBox": {
+			"unread": "Unread",
+			"read": "Mark all as read"
+		}
+	},
+	"components": {
+		"form": {
+			"left": {
+				"heading": "Questions? No problem, we have the answers",
+				"heading2": "Still have any questions?",
+				"text": "Just ping us, feel free! \n\n... \n\nOr read our FAQ. Who knows, maybe you can find answer by yourself",
+				"btn": "Go to FAQ"
+			},
+			"right": {
+				"heading": "Contact us",
+				"field1": {
+					"label": "Name",
+					"placeholder": "John Doe"
+				},
+				"field2": {
+					"label": "Discord username",
+					"placeholder": "@fluffymonkey"
+				},
+				"field3": {
+					"label": "Your question",
+					"placeholder": "Drop some lines here"
+				},
+				"btn": "Send"
+			}
+		},
+		"features": {
+			"heading": "No Hesi is more than community.",
+			"btn": "Read about us",
+			"f1": {
+				"heading": "Volutpat scelerisque cursus",
+				"desc": "Malesuada sagittis risus ut ut. Lacus non nullam eleifend bibendum ultrices in. Sapien duis pulvinar lectus a ultrices elementum odio scelerisque malesuada."
+			},
+			"f2": {
+				"heading": "Volutpat scelerisque cursus",
+				"desc": "Malesuada sagittis risus ut ut. Lacus non nullam eleifend bibendum ultrices in. Sapien duis pulvinar lectus a ultrices elementum odio scelerisque malesuada."
+			},
+			"f3": {
+				"heading": "Volutpat scelerisque cursus",
+				"desc": "Malesuada sagittis risus ut ut. Lacus non nullam eleifend bibendum ultrices in. Sapien duis pulvinar lectus a ultrices elementum odio scelerisque malesuada."
+			}
+		},
+		"servers": {
+			"heading": "Popular servers",
+			"btn": "Show all"
+		},
+		"plans": {
+			"heading": "comfortable gaming for everyone",
+			"desc": "Laoreet euismod faucibus fringilla vitae justo. Orci sapien velit massa aenean etiam consectetur facilisis.",
+			"tenure": {
+				"monthly": "Monthly",
+				"yearly": "Yearly",
+				"discount": "Save 20%"
+			},
+			"planFeatures": [
+				"Access to Help and Help FAQ",
+				"Monthly Public Car Updates",
+				"Access to 20+ Public Servers",
+				"VIP slots on public servers",
+				"VlP-Only \"Public Pack\" Servers",
+				"VIP Alternative and Drift Servers",
+				"Exclusive Cars",
+				"JDM, VTEC, Manual and Drag Servers",
+				"ln-game Badges",
+				"Complete Server Access",
+				"Weekly Fresh Content",
+				"Early Access to Exclusive Content",
+				"Collaborative Community Access"
+			],
+			"plansData": [
+				{
+					"title": "Public",
+					"pricing": "Free",
+					"tier": 0,
+					"buttonTitle": "CurrentPlan",
+					"listTitle": "Everything you need to start playing.",
+					"features": 3
+				},
+				{
+					"title": "Public+",
+					"pricing": 3.99,
+					"tier": 1,
+					"buttonTitle": "Subscribe Now",
+					"listTitle": "Everything you need to start playing.",
+					"features": 6
+				},
+				{
+					"title": "Midnight",
+					"pricing": 7.99,
+					"tier": 2,
+					"buttonTitle": "Free 7 days trial",
+					"listTitle": "Be the part of community.",
+					"features": 9
+				},
+				{
+					"title": "Underground",
+					"pricing": 12.99,
+					"tier": 3,
+					"buttonTitle": "Subscribe Now",
+					"listTitle": "Want to be VIP? Be the underground.",
+					"features": 13
+				}
+			]
+		},
+		"sortButton": {
+			"title": "Sort By"
+		}
+	},
+	"auth": {
+		"signin": {
+			"title": "WELCOME",
+			"btnDiscord": "LOG IN VIA DISCORD ",
+			"btnGoogle": "LOG IN VIA GOOGLE ",
+			"seperator": "or",
+			"label1": "Email",
+			"label2": "Password",
+			"placeholder1": "example@mail.com",
+			"forgotLink": "Forgot password?",
+			"btn1": "Send email link",
+			"msg": "Don't have an account?",
+			"btn2": "Sign up"
+		},
+		"signup": {
+			"title": "Sign up",
+			"label1": "Your name",
+			"label2": "Username",
+			"label3": "Email",
+			"label4": "Create password",
+			"label5": "Repeat password",
+			"placeholder1": "John",
+			"placeholder2": "Enter username",
+			"placeholder3": "example@mail.com",
+			"btn1": "Create an account",
+			"msg1": "By clicking \"Create account\" above, you acknowledge that you will receive updates from the No Hesi team and that you have read, understood, and agreed to No Hesi's ",
+			"msg2": "Privacy Policy",
+			"msg3": " and ",
+			"msg4": "Terms Of Use",
+			"msg5": "Already have an account?",
+			"btn2": "Log in"
+		},
+		"forgetPassword": {
+			"title": "FORGOT YOUR PASSWORD?",
+			"msg1": "Enter your email address below and we'll send you a code to log in and reset your password.",
+			"label": "Email",
+			"placeholder": "example@mail.com",
+			"btn1": "Send code",
+			"msg2": "Remember your password?",
+			"btn2": "Log in"
+		},
+		"verifyEmail": {
+			"title": "Verify your email",
+			"msg1": "We sent you a six digit confirmation code to example@mail.com. Please enter it below to confirm your email adress.",
+			"placeholder": "Enter 6-digit code",
+			"msg2": "Didn't receive a code? ",
+			"msg3": "Send code again",
+			"msg4": "A new code was sent - check your inbox"
+		},
+		"resetPassword": {
+			"title": "Reset password",
+			"label1": "New password",
+			"label2": "Repeat password",
+			"btn": "Create new password"
+		},
+		"connectDiscord": {
+			"title": "CONNECT YOUR \nDISCORD",
+			"msg": "Your account was successfully created! One more thing: connect your Discord account for...",
+			"btn": "Connect"
+		}
+	}
+}

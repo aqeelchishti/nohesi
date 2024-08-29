@@ -1,0 +1,246 @@
+{
+    "page": {
+        "home": {
+            "hero": {
+                "h1": "virtual streets \real rush",
+                "h2": "chase your \new high",
+                "btn": "Explore Servers"
+            },
+            "cta1": {
+                "heading": "We are the \best in class",
+                "desc": ""
+            },
+            "cta2": {
+                "heading": "dont hesitate",
+                "subHeading": "Start right now!",
+                "btn": "Join Discord Community"
+            },
+            "merch": {
+                "title": "Add to your collection",
+                "btn": "Explore merch"
+            },
+            "news": {
+                "title": "Latest Updates",
+                "btn": "Show all"
+            }
+        },
+        "about": {  
+            "hero": {
+                "heading": "Eget mi aliquam phasellus",
+                "subheading": "Proin at porta eu condimentum"
+            },
+            "section2": {
+                "heading": "What we do",
+                "desc": "Proin massa aliquet lorem adipiscing. Nibh id ultrices bibendum volutpat at eget. Rhoncus odio est adipiscing viverra. Eu quisque diam mollis neque viverra vel eget tellus a. Condimentum fusce sem in fermentum pellentesque nunc massa. Velit scelerisque nec enim dolor vel. Sagittis lectus est ultricies ac eu euismod morbi lectus nunc. Consectetur commodo enim dictumst integer sit in ipsum condimentum. Dolor vulputate quis amet cursus tincidunt nec.\n Arcu auctor viverra elit et senectus. Elit hendrerit proin purus a. Fermentum et duis risus est. A augue eros enim dis neque id non a. Odio lacus aliquet pretium volutpat tortor nisl ornare non malesuada. Purus euismod senectus duis tincidunt dolor est eget."
+            },
+            "testimonials": {
+                "title": "What people say about us"
+            },
+            "social": {
+                "title": "Check our youtube channel",
+                "btn": "Go to Youtube"
+            }
+        },
+        "contact": {
+            "heading": "Contacts",
+            "sections": {
+                "1": "Youtube Channel",
+                "2": "Discord",
+                "3": "Instagram",
+                "4": "Tiktok"
+            }
+        },
+        "faq": {
+            "faqData": [
+                {
+                    "question": "Facilisis sit erat sagittis non?",
+                    "answer": "Tellus pellentesque felis sodales pretium. Ultrices diam viverra quam euismod. Nec est etiam ac ullamcorper vitae. Ut enim ullamcorper eros pulvinar. Tincidunt sed duis hendrerit vel nisl nec leo. Eu consectetur tortor nec viverra at. Diam pellentesque dignissim in mauris. Porttitor ut magna nibh nulla et vulputate elit. Curabitur vitae dignissim vitae nulla elementum elit nisl. Pellentesque tincidunt neque ipsum mi. Consequat eget pharetra proin turpis nisl viverra curabitur urna id. Velit nibh venenatis nulla magna ut odio phasellus. Amet fames gravida scelerisque ultrices elit placerat.",
+                    "isOpen": false
+                },
+                {
+                    "question": "Dictum cursus ultrices odio auctor enim mi viverra sed?",
+                    "answer": "Tellus pellentesque felis sodales pretium. Ultrices diam viverra quam euismod. Nec est etiam ac ullamcorper vitae. Ut enim ullamcorper eros pulvinar. Tincidunt sed duis hendrerit vel nisl nec leo. Eu consectetur tortor nec viverra at. Diam pellentesque dignissim in mauris. Porttitor ut magna nibh nulla et vulputate elit. Curabitur vitae dignissim vitae nulla elementum elit nisl. Pellentesque tincidunt neque ipsum mi. Consequat eget pharetra proin turpis nisl viverra curabitur urna id. Velit nibh venenatis nulla magna ut odio phasellus. Amet fames gravida scelerisque ultrices elit placerat.",
+                    "isOpen": false
+                },
+                {
+                    "question": "Purus nulla turpis in id?",
+                    "answer": "Tellus pellentesque felis sodales pretium. Ultrices diam viverra quam euismod. Nec est etiam ac ullamcorper vitae. Ut enim ullamcorper eros pulvinar. Tincidunt sed duis hendrerit vel nisl nec leo. Eu consectetur tortor nec viverra at. Diam pellentesque dignissim in mauris. Porttitor ut magna nibh nulla et vulputate elit. Curabitur vitae dignissim vitae nulla elementum elit nisl. Pellentesque tincidunt neque ipsum mi. Consequat eget pharetra proin turpis nisl viverra curabitur urna id. Velit nibh venenatis nulla magna ut odio phasellus. Amet fames gravida scelerisque ultrices elit placerat.",
+                    "isOpen": false
+                },
+                {
+                    "question": "Dapibus vel purus ornare egestas viverra?",
+                    "answer": "Tellus pellentesque felis sodales pretium. Ultrices diam viverra quam euismod. Nec est etiam ac ullamcorper vitae. Ut enim ullamcorper eros pulvinar. Tincidunt sed duis hendrerit vel nisl nec leo. Eu consectetur tortor nec viverra at. Diam pellentesque dignissim in mauris. Porttitor ut magna nibh nulla et vulputate elit. Curabitur vitae dignissim vitae nulla elementum elit nisl. Pellentesque tincidunt neque ipsum mi. Consequat eget pharetra proin turpis nisl viverra curabitur urna id. Velit nibh venenatis nulla magna ut odio phasellus. Amet fames gravida scelerisque ultrices elit placerat.",
+                    "isOpen": false
+                },
+                {
+                    "question": "In cursus scelerisque mattis est?",
+                    "answer": "Tellus pellentesque felis sodales pretium. Ultrices diam viverra quam euismod. Nec est etiam ac ullamcorper vitae. Ut enim ullamcorper eros pulvinar. Tincidunt sed duis hendrerit vel nisl nec leo. Eu consectetur tortor nec viverra at. Diam pellentesque dignissim in mauris. Porttitor ut magna nibh nulla et vulputate elit. Curabitur vitae dignissim vitae nulla elementum elit nisl. Pellentesque tincidunt neque ipsum mi. Consequat eget pharetra proin turpis nisl viverra curabitur urna id. Velit nibh venenatis nulla magna ut odio phasellus. Amet fames gravida scelerisque ultrices elit placerat.",
+                    "isOpen": false
+                },
+                {
+                    "question": "Tempus vitae leo aliquet viverra faucibus?",
+                    "answer": "Tellus pellentesque felis sodales pretium. Ultrices diam viverra quam euismod. Nec est etiam ac ullamcorper vitae. Ut enim ullamcorper eros pulvinar. Tincidunt sed duis hendrerit vel nisl nec leo. Eu consectetur tortor nec viverra at. Diam pellentesque dignissim in mauris. Porttitor ut magna nibh nulla et vulputate elit. Curabitur vitae dignissim vitae nulla elementum elit nisl. Pellentesque tincidunt neque ipsum mi. Consequat eget pharetra proin turpis nisl viverra curabitur urna id. Velit nibh venenatis nulla magna ut odio phasellus. Amet fames gravida scelerisque ultrices elit placerat.",
+                    "isOpen": false
+                },
+                {
+                    "question": "Ultricies sed nibh nisl mattis auctor in?",
+                    "answer": "Tellus pellentesque felis sodales pretium. Ultrices diam viverra quam euismod. Nec est etiam ac ullamcorper vitae. Ut enim ullamcorper eros pulvinar. Tincidunt sed duis hendrerit vel nisl nec leo. Eu consectetur tortor nec viverra at. Diam pellentesque dignissim in mauris. Porttitor ut magna nibh nulla et vulputate elit. Curabitur vitae dignissim vitae nulla elementum elit nisl. Pellentesque tincidunt neque ipsum mi. Consequat eget pharetra proin turpis nisl viverra curabitur urna id. Velit nibh venenatis nulla magna ut odio phasellus. Amet fames gravida scelerisque ultrices elit placerat.",
+                    "isOpen": false
+                },
+                {
+                    "question": "At quam quis et pretium vivamus bibendum sed?",
+                    "answer": "Tellus pellentesque felis sodales pretium. Ultrices diam viverra quam euismod. Nec est etiam ac ullamcorper vitae. Ut enim ullamcorper eros pulvinar. Tincidunt sed duis hendrerit vel nisl nec leo. Eu consectetur tortor nec viverra at. Diam pellentesque dignissim in mauris. Porttitor ut magna nibh nulla et vulputate elit. Curabitur vitae dignissim vitae nulla elementum elit nisl. Pellentesque tincidunt neque ipsum mi. Consequat eget pharetra proin turpis nisl viverra curabitur urna id. Velit nibh venenatis nulla magna ut odio phasellus. Amet fames gravida scelerisque ultrices elit placerat.",
+                    "isOpen": false
+                }
+            ]
+        },
+        "servers": {
+            "title": "Servers",
+            "desc": "Proin at porta eu condimentum",
+            "tableHeaders": [
+                "Name",
+                "Traffic Density",
+                "Slots",
+                "VIP Slots",
+                "Tier 3 cars",
+                "Map",
+                "Region"
+            ],
+            "filters": [
+                {
+                    "title": "Region",
+                    "values": ["Europe", "America", "Australia"],
+                    "isOpen": false,
+                    "active": "Europe"
+                },
+                {
+                    "title": "Traffic Density",
+                    "values": ["Heavy", "Light"],
+                    "isOpen": false,
+                    "active": "Heavy"
+                },
+                {
+                    "title": "Map",
+                    "values": ["Shutoko Revival Project", "FDR"],
+                    "isOpen": false,
+                    "active": "Shutoko Revival Project"
+                },
+                {
+                    "title": "Tier",
+                    "values": ["1: Public+", "2: Midnight", "3: Underground"],
+                    "isOpen": false,
+                    "active": "1: Public+"
+                }
+            ],
+            "sortOptions": [
+                "Players",
+                "Region"
+            ],
+            "filterBox": {
+                "title": "Filters"
+            }
+        }
+    },
+    "components": {
+        "form": {
+            "left": {
+                "heading": "Questions? \nNo problem, \nwe have the answers",
+                "heading2": "",
+                "text": " \nCheck out our FAQ.",
+                "btn": "Go to FAQ"
+            },
+            "right": {
+                "heading": "Contact us",
+                "field1": {
+                    "label": "Name",
+                    "placeholder": ""
+                },
+                "field2": {
+                    "label": "Discord username",
+                    "placeholder": ""
+                },
+                "field3": {
+                    "label": "Your question",
+                    "placeholder": "Drop some lines here"
+                },
+                "btn": "Send"
+            }
+        },
+        "features": {
+            "heading": "No Hesi is a \nGlobal Community",
+            "btn": "Read about us",
+            "f1": {
+                "heading": "WORLDWIDE INFLUENCE",
+                "desc": "Our content has billions of views, and has created an entirely new community of driving enthusiasts. We have over 500K active members that drive together across all continents."
+            },
+            "f2": {
+                "heading": "OUR VISION",
+                "desc": "Since the beginning, our vision has been to blend the real and virtual world, aligning our brand with the underground racing community. We partner with real-world brands to get you as close as possible to your dream builds with the most desirable cars in the world."
+            },
+            "f3": {
+                "heading": "UNLIMITED POTENTIAL",
+                "desc": "As the leading virtual car community, you have an opportunity to grow your own brand and following with hundreds of thousands of drivers across the globe. Create new connections that you can't make anywhere else."
+            }
+        },
+        "servers": {
+            "heading": "Trending Servers",
+            "btn": "Explore all servers"
+        },
+        "plans": {
+            "heading": "pick one of three lanes",
+            "desc": "Elevate your experience with a VIP membership",
+            "planFeatures": [
+                "Access to Help and Help FAQ",
+                "Monthly Public Car Updates",
+                "Access to 20+ Public Servers",
+                "VIP slots on public servers",
+                "VlP-Only \"Public Pack\" Servers",
+                "VIP Alternative and Drift Servers",
+                "Exclusive Cars",
+                "JDM, VTEC, Manual and Drag Servers",
+                "ln-game Badges",
+                "Complete Server Access",
+                "Weekly Fresh Content",
+                "Early Access to Exclusive Content",
+                "Collaborative Community Access"
+            ],
+            "plansData": [
+                {
+                    "title": "Public",
+                    "pricing": "Free",
+                    "tier": 0,
+                    "buttonTitle": "CurrentPlan",
+                    "listTitle": "Everything you need to start playing.",
+                    "features": 3                
+                },
+                {
+                    "title": "Public+",
+                    "pricing": 3.99,
+                    "tier": 1,
+                    "buttonTitle": "Subscribe Now",
+                    "listTitle": "Everything you need to start playing.",
+                    "features": 6
+                },
+                {
+                    "title": "Midnight",
+                    "pricing": 7.99,
+                    "tier": 2,
+                    "buttonTitle": "Free 7 days trial",
+                    "listTitle": "Be the part of community.",
+                    "features": 9
+                },
+                {
+                    "title": "Underground",
+                    "pricing": 12.99,
+                    "tier": 3,
+                    "buttonTitle": "Subscribe Now",
+                    "listTitle": "Want to be VIP? Be the underground.",
+                    "features": 13
+                }
+            ]
+        },
+        "sortButton": {
+            "title": "Sort By"
+        }
+    }
+}

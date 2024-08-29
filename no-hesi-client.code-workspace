@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "name": "project-root",
+      "path": "./"
+    },
+    {
+      "name": "supabase-functions",
+      "path": "supabase/functions"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "supabase/functions/": true
+    },
+    "i18n-ally.localesPaths": [
+      "src/lib/i18n",
+      "src/lib/i18n/locales"
+    ]
+  }
+}

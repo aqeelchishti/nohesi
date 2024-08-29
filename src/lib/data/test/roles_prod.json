@@ -1,0 +1,95 @@
+[
+	{
+		"id": "986409430465785858",
+		"name": "Driver",
+		"type": "Tier 0",
+		"color": "black",
+		"level": 0,
+		"trial_period": 0
+	},
+	{
+		"id": "1200695475687411784",
+		"name": "Public+",
+		"product_id": "prod_PSB4zdMdhD1g4y",
+		"type": "Tier 1",
+		"color": "gray",
+		"level": 2,
+		"month": "price_1OdGiTKZqzq0BRF4F4rpTstj",
+		"year": "price_1OdJVkKZqzq0BRF44bg1X4BW",
+		"trial_period": 0,
+		"mode": "discord"
+	},
+	{
+		"id": "1200696141956788294",
+		"name": "Midnight",
+		"product_id": "prod_PSB1fHtwoUil4k",
+		"type": "Tier 2",
+		"color": "orange",
+		"level": 3,
+		"month": "price_1OdGf2KZqzq0BRF4iNiHE4sJ",
+		"year": "price_1OdJV9KZqzq0BRF44nGAHE6z",
+		"trial_period": 7,
+		"mode": "discord"
+	},
+	{
+		"id": "1200696417476419684",
+		"name": "Underground",
+		"product_id": "prod_PSArcpSydGiLnp",
+		"type": "Tier 3",
+		"color": "red",
+		"level": 4,
+		"month": "price_1OdGVmKZqzq0BRF4XfjzupaA",
+		"year": "price_1OdGZ7KZqzq0BRF4oTO3xs3F",
+		"trial_period": 0,
+		"mode": "discord"
+	},
+	{
+		"id": "976641668742803527",
+		"mode": "discord",
+		"level": 7,
+		"name": "Staff",
+		"type": "Staff"
+	},
+	{
+		"id": "1086690507725471865",
+		"mode": "discord",
+		"level": 1,
+		"name": "Certified",
+		"type": "Certified"
+	},
+	{
+		"id": "973291764804898847",
+		"mode": "discord",
+		"level": 5,
+		"name": "Lifetime",
+		"type": "Lifetime"
+	},
+	{
+		"id": "967906426913718292",
+		"mode": "discord",
+		"level": 6,
+		"name": "Content Creator",
+		"type": "Content Creator"
+	},
+	{
+		"id": "981497035305910292",
+		"mode": "discord",
+		"level": 8,
+		"name": "Managment",
+		"type": "Managment"
+	},
+	{
+		"id": "986048624012169216",
+		"mode": "discord",
+		"level": 9,
+		"name": "Developer",
+		"type": "Developer"
+	},
+	{
+		"id": "964932489804124250",
+		"mode": "discord",
+		"level": 10,
+		"name": "Owner",
+		"type": "Owner"
+	}
+]

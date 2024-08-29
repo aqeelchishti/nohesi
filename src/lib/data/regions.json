@@ -1,0 +1,23 @@
+[
+    {
+        "region": "Europe",
+        "code": "EU",
+        "flag": "eu"
+    },
+    {
+        "region": "North America",
+        "code": "US",
+        "flag": "us"
+
+    },
+    {
+        "region": "Australia",
+        "code": "OCE",
+        "flag": "au"
+    },
+    {
+        "region": "Asia",
+        "code": "ASIA",
+        "flag": "sg"
+    }
+]

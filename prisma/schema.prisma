@@ -1,0 +1,284 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model configs {
+  id             String    @id
+  server_range   Int       @default(0) @db.SmallInt
+  images         String[]
+  accounts_range BigInt    @default(0)
+  created_at     DateTime? @db.Timestamptz(6)
+}
+
+model email_verification_token {
+  id         String   @id
+  user_id    String   @unique(map: "user_token_unique") @db.Uuid
+  email      String
+  expires_at DateTime @db.Timestamptz(6)
+  user       user     @relation(fields: [user_id], references: [id], onDelete: Cascade, map: "user_token")
+
+  @@index([user_id], map: "fki_user_token")
+}
+
+model favourite_servers {
+  id         BigInt   @id(map: "favservers_pkey") @default(autoincrement())
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+  server     String
+  uid        String   @db.Uuid
+  servers    servers  @relation(fields: [server], references: [ip_address], onDelete: Cascade)
+  user       user     @relation(fields: [uid], references: [id], onDelete: Cascade)
+
+  @@unique([server, uid], map: "favservers_server_uid_key")
+}
+
+model magic_link {
+  id         String    @id
+  email      String?   @unique(map: "email_unique")
+  expires_at DateTime? @db.Timestamptz(6)
+  user       user?     @relation(fields: [email], references: [email], onDelete: Cascade, map: "email")
+
+  @@index([email], map: "fki_email")
+}
+
+model oauth_account {
+  provider_id       String
+  provider_user_id  String
+  user_id           String? @db.Uuid
+  provider_metadata Json?
+  user              user?   @relation(fields: [user_id], references: [id], onDelete: Cascade, map: "user_oauth")
+
+  @@id([provider_id, provider_user_id])
+  @@index([user_id], map: "fki_user_oauth")
+}
+
+model password_reset_token {
+  id         String   @id
+  email      String   @unique(map: "email_pass_unique")
+  expires_at DateTime @db.Timestamptz(6)
+  user       user     @relation(fields: [email], references: [email], onDelete: Cascade, map: "fk_pass_user_token")
+
+  @@index([email], map: "fki_email_user_fk")
+  @@index([email], map: "fki_fk_pass_user_token")
+}
+
+model roles {
+  id         String   @id(map: "roles1_pkey") @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+  name       String
+  level      Int
+  details    String?  @db.Uuid
+  role_id    String?
+  tiers      tiers?   @relation(fields: [details], references: [id], onDelete: Cascade, map: "roles1_details_fkey")
+}
+
+model servers {
+  ip_address          String              @id
+  maxclients          Int                 @default(0) @db.SmallInt
+  clients             Int                 @default(0) @db.SmallInt
+  vip_slots           Int                 @default(0) @db.SmallInt
+  map                 String
+  region              String
+  density             String
+  name                String
+  type                String
+  tier3_cars          Int                 @default(0) @db.SmallInt
+  failed              Boolean             @default(false)
+  growth              Int?
+  position            Int?                @unique @db.SmallInt
+  country             String?
+  grip                Int?
+  wind_speed          Int?
+  ambient_temperature Float?              @db.Real
+  road_temperature    Float?              @db.Real
+  weather             String?
+  players             Json?
+  cars                Json?
+  features            Json?
+  max_vip_slots       Int                 @default(0) @db.SmallInt
+  favourite_servers   favourite_servers[]
+  servers_history     servers_history[]
+}
+
+model servers_history {
+  id         BigInt   @id @default(autoincrement())
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+  ip_address String?
+  clients    Int
+  servers    servers? @relation(fields: [ip_address], references: [ip_address], onDelete: Cascade, map: "public_servers_history_ip_address_fkey")
+}
+
+model session {
+  userId    String?  @db.Uuid
+  id        String   @id(map: "Session_pkey")
+  expiresAt DateTime @db.Timestamptz(6)
+  user      user?    @relation(fields: [userId], references: [id], onDelete: Cascade, map: "fk_session_userId")
+
+  @@index([userId], map: "fki_fk_session_userId")
+}
+
+model tiers {
+  id          String   @id(map: "tiers1_pkey") @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  created_at  DateTime @default(now()) @db.Timestamptz(6)
+  stripe      String
+  discord     String?
+  patreon     String?
+  price_month String
+  price_year  String
+  product     String
+  type        String
+  roles       roles[]
+}
+
+model trials {
+  id         BigInt   @id @default(autoincrement())
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+  price_id   String   @unique
+  product_id String
+  days       BigInt
+}
+
+model user {
+  id                       String                    @id(map: "User_pkey") @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  email                    String                    @unique(map: "User_email_key")
+  name                     String?                   @unique
+  password                 String?
+  avatar                   String?
+  email_verified           Boolean?                  @default(true)
+  stripe_customer_id       String?                   @unique
+  tries_left               Int                       @default(3) @db.SmallInt
+  fingerprints             String[]                  @default([])
+  trial_availed            Boolean                   @default(false)
+  change_email_token       change_email_token?
+  email_verification_token email_verification_token?
+  favourite_servers        favourite_servers[]
+  friends                  friends[]
+  launcher_auth_token      launcher_auth_token[]
+  magic_link               magic_link?
+  oauth_account            oauth_account[]
+  password_reset_token     password_reset_token?
+  session                  session[]
+  usernames                usernames?
+}
+
+model chat {
+  id                Int                 @id @default(autoincrement())
+  created_at        DateTime            @default(now()) @db.Timestamptz(6)
+  message           String?
+  ip_address        String
+  steam_id          String
+  reply_to          Int?
+  attachment        Json?               @db.Json
+  chat              chat?               @relation("chatTochat", fields: [reply_to], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  other_chat        chat[]              @relation("chatTochat")
+  message_reactions message_reactions[]
+
+  @@index([reply_to], map: "replyTo")
+}
+
+model change_email_token {
+  user_id    String   @id @db.Uuid
+  expires_at DateTime @db.Timestamptz(6)
+  token1     String
+  token2     String
+  new_email  String   @unique
+  user       user     @relation(fields: [user_id], references: [id], onDelete: Cascade, map: "user_id_fk")
+
+  @@index([user_id], map: "fki_user_id")
+  @@index([user_id], map: "fki_user_id_fk")
+}
+
+model account_delete_feedbacks {
+  id         BigInt   @id @default(autoincrement())
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+  feedback   String
+}
+
+model launcher_auth_token {
+  user_id        String?  @db.Uuid
+  expires_at     DateTime @db.Timestamptz(6)
+  launcher_token String
+  auth_token     String?
+  id             Int      @id @default(autoincrement())
+  user           user?    @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@index([user_id], map: "fki_launcher_auth_token_user_id_fkey")
+}
+
+model chat_penalties {
+  steam_id       String   @id
+  offense_count_ Int      @default(0) @map("offense_count ")
+  last_offense   DateTime @db.Timestamptz(6)
+}
+
+model deleted_accounts {
+  id                 String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  email              String   @unique
+  stripe_customer_id String?
+  fingerprints       String[] @default([])
+  trial_availed      Boolean
+  created_at         DateTime @default(now()) @db.Timestamptz(6)
+}
+
+model emojis_gifs {
+  steam_id String @id
+  emojis   Json[] @db.Json
+  gifs     Json[] @db.Json
+}
+
+model message_reactions {
+  id         Int    @id @default(autoincrement())
+  message_id Int
+  user_id    String
+  emoji      String
+  ip_address String
+  chat       chat   @relation(fields: [message_id], references: [id], onDelete: Cascade)
+}
+
+model steam_requests {
+  id         BigInt   @id @default(autoincrement())
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+  users      Int      @default(1)
+}
+
+model usernames {
+  name String @id
+  user user   @relation(fields: [name], references: [name], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model role_correction_stats {
+  id                 BigInt               @id @default(autoincrement())
+  created_at         DateTime             @default(now()) @db.Timestamptz(6)
+  reason             role_correction_type
+  user_id            String?              @db.Uuid
+  discord_id         String?
+  stripe_customer_id String?
+}
+
+model friend_requests {
+  id            String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  friend_id     String    @db.Uuid
+  status        String
+  request_date  DateTime? @db.Timestamptz(6)
+  accepted_date DateTime? @db.Timestamptz(6)
+  friends       friends   @relation(fields: [friend_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "friend_id_fkey")
+}
+
+model friends {
+  id              String            @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  user_id         String            @db.Uuid
+  date_added      DateTime?         @db.Timestamptz(6)
+  mutual_friends  Int?              @map("mutual-friends")
+  friend_requests friend_requests[]
+  user            user              @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "user_id_fkey")
+}
+
+enum role_correction_type {
+  removed_roles @map("removed-roles")
+  added_roles   @map("added-roles")
+  updated_roles @map("updated-roles")
+}
