@@ -2,6 +2,7 @@
 
 Experience the thrill of street racing with No Hesi - where the adrenaline of New York street racing meets the comfort and safety of your home
 
+<!--
 ## Building
 
 1. clone the repo
@@ -45,5 +46,6 @@ Experience the thrill of street racing with No Hesi - where the adrenaline of Ne
     ```bash
     npm run preview
     ```
+-->
 
     
