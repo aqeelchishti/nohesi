@@ -145,6 +145,6 @@
 </script>
 
 {#if $websiteLoading}
-	<Loading />
+	<!--<Loading />-->
 {/if}
 <slot />
